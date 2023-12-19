@@ -1,0 +1,36 @@
+/* AboutUs.css */
+.about-us-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-us-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-us-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.about-us-table,
+.about-us-table th,
+.about-us-table td {
+    border: 1px solid #ddd;
+}
+
+.about-us-th,
+.about-us-td {
+    padding: 12px;
+    text-align: left;
+}
