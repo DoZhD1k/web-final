@@ -9,6 +9,7 @@ import whatsapp_icon from '../Assets/whatsapp_icon.png';
 const Footer = () => {
   const [menu, setMenu] = useState("contact");
 
+  
   return (
     <div className='footer'>
       <div className="footer-logo">

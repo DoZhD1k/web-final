@@ -10,9 +10,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Здесь можно добавить логику для обработки отправки формы
     console.log('Form submitted!', formData);
-    // Очистить поля формы после отправки
     setFormData({
       name: '',
       email: '',

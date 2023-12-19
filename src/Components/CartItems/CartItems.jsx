@@ -25,7 +25,7 @@ const CartItems = () => {
                             <img src={e.image} alt="" className='carticon-product-icon' />
                             <p>{e.name}</p>
                             <p>${e.new_price}</p>
-                            <div>
+                            <div className='input-container'>
                               <input className='cartitems-quantity' value={cartItems[e.id]}></input>
                               <button onClick={()=>{addToCart(e.id)}}>+</button>
                               <button onClick={()=>{removeFromCart(e.id)}}>-</button>

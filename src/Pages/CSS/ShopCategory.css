@@ -43,10 +43,15 @@
 }
 
 .shopcategory-products {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
+    grid-template-columns: 355px 355px 355px 355px;
+    margin-top: 50px;
+    right: 157px;
 }
+
+
 
 .shopcategory-loadmore {
     padding: 10px;
