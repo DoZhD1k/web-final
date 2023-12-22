@@ -34,7 +34,6 @@ const Offers = () => {
 
   return (
     <div className="offers">
-      {/* Используем улучшенный слайдер с логированием */}
       <EnhancedSlider {...sliderSettings}>
         <div className="offers-slide offer-added">
           <img src={discount} alt="" />
