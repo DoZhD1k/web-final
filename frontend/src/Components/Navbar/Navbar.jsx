@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
@@ -8,6 +8,17 @@ import DropDown from "../Dropdown/Dropdown";
 
 const Navbar = () => {
   const { getTotalCartItems } = useContext(ShopContext);
+  const [isDropDownOpen] = useState(false);
+
+  // componentDidMount
+  useEffect(() => {
+    console.log("Navbar component is mounted");
+  });
+
+  // componentDidUpdate
+  useEffect(() => {
+    console.log("Navbar component is updated");
+  });
 
   return (
     <div className="navbar">
@@ -15,7 +26,7 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <p>E-commerce</p>
       </div>
-      <DropDown />
+      <DropDown isOpen={isDropDownOpen} />
       <div className="nav-login-cart">
         <Link to="/login">
           <button>Sign Up</button>
