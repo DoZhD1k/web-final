@@ -10,12 +10,10 @@ const Navbar = () => {
   const { getTotalCartItems } = useContext(ShopContext);
   const [isDropDownOpen] = useState(false);
 
-  // componentDidMount
   useEffect(() => {
     console.log("Navbar component is mounted");
   });
 
-  // componentDidUpdate
   useEffect(() => {
     console.log("Navbar component is updated");
   });
